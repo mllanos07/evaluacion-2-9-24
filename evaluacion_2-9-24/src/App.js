@@ -52,12 +52,12 @@ function App() {
         <input type="text" value={term} onChange={handleTermChange} />
         <button onClick={getTermino}>Enviar</button>
         <h3>Resultados de búsqueda:</h3>
-        <p className="result-box"></p>
-        <ul>
+        <p className="result-box"> <ul>
           {termino.map((consejo, index) => (
-            <li key={index}>{consejo.slips.advice}</li>
+            <li key={index}>{consejo.advice}</li>
           ))}
-        </ul>
+        </ul></p>
+       
       </div>
     </main>
   );
